@@ -1,6 +1,5 @@
-// when planner is onpened then current day is displayed 
-var rightNow = moment().format("MMMM Do, YYYY");
-console.log(rightNow);
+// when planner is onpened
+// then current day is displayed (moment.js)
 // upon scrolling time blocks for standard business hours appear
 // when time blocks are viewed
 // each time block has color-code to indicate if it's in the past, present, or future
