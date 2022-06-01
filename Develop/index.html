@@ -1,42 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <!-- Timeblocks go here -->
+  <main class="container"> 
+    <div class="row">
+      <!-- 8am time with task  -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            8am
+          </h2>
+          <ul id="task-item">
+              Example Task
+          </ul>
+        </div>
+      </div>
+      <!-- 9am time with task -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            9am
+          </h2>
+          <ul id="task-item">
+            Example Task 2
+          </ul>
+        </div>
+      </div>
+      <!-- 10am time with task -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            10am
+          </h2>
+          <ul id="task-item">
+            Example Task 3
+          </ul>
+        </div>
+      </div>
+      <!-- 11am time with task -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            11am
+          </h2>
+          <ul id="task-item">
+            Example Task 4
+          </ul>
+        </div>
+      </div>
+      <!-- 12pm time with task -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            12pm
+          </h2>
+          <ul id="task-item">
+            Example Task 5
+          </ul>
+        </div>
+      </div>
+      <!-- 1pm time with task -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            1pm
+          </h2>
+          <ul id="task-item">
+            Example Task 6
+          </ul>
+        </div>
+      </div>
+      <!-- 2pm time with task -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            2pm
+          </h2>
+          <ul id="task-item">
+            Example Task 7
+          </ul>
+        </div>
+      </div>
+      <!-- 3pm time with task -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            3pm
+          </h2>
+          <ul id="task-item">
+            Example Task 8
+          </ul>
+        </div>
+      </div>
+      <!-- 4pm time with task -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            4pm
+          </h2>
+          <ul id="task-item">
+            Example Task 9
+          </ul>
+        </div>
+      </div>
+      <!-- 5pm time with task -->
+      <div class="col-12">
+        <div class="card">
+          <h2>
+            5pm
+          </h2>
+          <ul id="task-item">
+            Example Task 10
+          </ul>
+        </div>
+      </div>
     </div>
+  </main>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <!-- link to script.js file in develop folder -->
-    <script src="./script.js"></script>
-    <!-- link to moment.js for current date -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- link to script.js file in develop folder -->
+  <script src="./script.js"></script>
+  <!-- link to moment.js for current date -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
 </html>
