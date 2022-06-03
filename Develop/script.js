@@ -1,10 +1,21 @@
 $( document ).ready(function() {
 
+// query selector to select task description
+var taskDescription = document.querySelector('.description');
+// query selector for save button
+var saveTask = document.querySelector('.saveBtn');
 
+// attaching event listener to 'click' of save button in vanilla JS, this is saveTask.addEventListener("click", newTask);
+$(".saveBtn").click(function() {
+    // call the saveTasks function
+    saveTasks();
+});
+
+// when planner is opened then current day is displayed on the top of the page (used moment.js)
 var rightNow = moment().format("MMMM Do, YYYY");
+// this is the vanilla javaScript: 
 // var currentDay = document.querySelector("#currentDay")
 // currentDay.innerHTML = rightNow
-// when planner is opened then current day is displayed on the top of the page (used moment.js)
 $("#currentDay").html(rightNow)
 
 // when time blocks are viewed
