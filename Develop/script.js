@@ -13,9 +13,6 @@ $("#currentDay").html(rightNow)
 var tasks = [];
 console.log(tasks);
 
-// upon 'click' for time block
-// then an event can be entered 
-
 // upon save 'click' 
 // then text for that event is saved in local storage
 var saveTasks = function() {
