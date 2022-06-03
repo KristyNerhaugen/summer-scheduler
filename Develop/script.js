@@ -5,12 +5,6 @@ var taskDescription = document.querySelector('.description');
 // query selector for save button
 var saveTask = document.querySelector('.saveBtn');
 
-// attaching event listener to 'click' of save button in vanilla JS, this is saveTask.addEventListener("click", newTask);
-$(".saveBtn").click(function() {
-    // call the saveTasks function
-    saveTasks();
-});
-
 // when planner is opened then current day is displayed on the top of the page (used moment.js)
 var rightNow = moment().format("MMMM Do, YYYY");
 // this is the vanilla javaScript: 
@@ -26,6 +20,12 @@ console.log(tasks);
 
 // upon save 'click' 
 // then text for that event is saved in local storage
+// attaching event listener to 'click' of save button in vanilla JS, this is saveTask.addEventListener("click", newTask);
+$(".saveBtn").click(function() {
+    // call the saveTasks function
+    saveTasks();
+});
+
 var saveTasks = function() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
 };
@@ -50,7 +50,7 @@ var savedTasks = localStorage.getItem("task")
 console.log(savedTasks)
 var eightTasks = localStorage.getItem("8am")
 //FIRST STEP - check to see if there's data
-//eightTasks is the content for that 8am textarea, so you need to assign the content to that html element on page load
+//eightTasks is the content for that 8am textarea, so need to assign the content to that html element on page load
 
 
 });
