@@ -1,7 +1,8 @@
 $( document ).ready(function() {
 
-// query selector to select task description
-var taskDescription = document.querySelector('.description');
+// query selector to select all task descriptions
+var taskDescription = document.querySelectorAll;('.description');
+
 // query selector for save button
 var saveTask = document.querySelector('.saveBtn');
 
@@ -21,6 +22,7 @@ $("#currentDay").html(rightNow)
 
 // when time blocks are viewed
 // each time block has color-code to indicate if it's in the past, present, or future
+
 // empty array to store tasks 
 var tasks = [];
 console.log(tasks);
