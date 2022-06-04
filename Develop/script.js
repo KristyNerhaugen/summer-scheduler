@@ -5,6 +5,13 @@ var taskDescription = document.querySelector('.description');
 // query selector for save button
 var saveTask = document.querySelector('.saveBtn');
 
+// function to save the tasks from textarea when the save button is clicked using example code from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_textarea_value
+// function saveTaskEight() {
+//     var x = document.getElementById("eight_task").ariaValueMax;
+//     document.getElementById("eight_task").innterHTML = x;
+// }
+
+
 // when planner is opened then current day is displayed on the top of the page (used moment.js)
 var rightNow = moment().format("MMMM Do, YYYY");
 // this is the vanilla javaScript: 
@@ -33,16 +40,16 @@ var saveTasks = function() {
 var text = "event"
 localStorage.setItem("task", tasks)
 
-localStorage.setItem("8am", "8am tasks")
-localStorage.setItem("9am", "9am tasks")
-localStorage.setItem("10am", "10am tasks")
-localStorage.setItem("11am", "11am tasks")
-localStorage.setItem("12pm", "12pm tasks")
-localStorage.setItem("1pm", "1pm tasks")
-localStorage.setItem("2pm", "2pm tasks")
-localStorage.setItem("3pm", "3pm tasks")
-localStorage.setItem("4pm", "4pm tasks")
-localStorage.setItem("5pm", "5pm tasks")
+localStorage.setItem("8am", "eight_task")
+localStorage.setItem("9am", "nine_task")
+localStorage.setItem("10am", "ten_task")
+localStorage.setItem("11am", "eleven_task")
+localStorage.setItem("12pm", "twelve-task")
+localStorage.setItem("1pm", "one-task")
+localStorage.setItem("2pm", "two_task")
+localStorage.setItem("3pm", "three_task")
+localStorage.setItem("4pm", "four_task")
+localStorage.setItem("5pm", "five_task")
 
 // when page is refresehd
 // then the saved events persist 
