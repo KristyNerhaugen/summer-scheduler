@@ -4,7 +4,7 @@
 
 ### This link will take you to the deployed application:
 
-[See deployed site here](ENTER LINK HERE)
+[See deployed site here](https://kristynerhaugen.github.io/summer-scheduler/)
 
 ## Installation
 ### Access the code via GitHub. Install how you would usually install from a GitHub repository. 
