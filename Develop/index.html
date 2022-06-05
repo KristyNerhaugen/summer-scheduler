@@ -1,38 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <!-- Timeblocks go here -->
+  <main class="container">
+    <!-- 8am time with task  -->
+    <div id="8" class="row">
+      <div class="col-3 time-block">
+        <p class="hour">
+          8am
+        </p>
+      </div>
+      <div class="col-8">
+        <textarea id="eight_task" class="description" placeholder="Enter Task Here"></textarea>
+      </div>
+      <div class="col-1">
+        <button id="saveBtnOne" class="saveBtn "><span class="oi oi-lock-locked"></span></button>
+      </div>
     </div>
+    <!-- 9am time with task  -->
+    <div id="9" class="row">
+      <div class="col-3 time-block">
+        <p class="hour">
+          9am
+        </p>
+      </div>
+      <div class="col-8">
+        <textarea id="nine_task" class="description" placeholder="Enter Task Here"></textarea>
+      </div>
+      <div class="col-1">
+        <button id="saveBtnTwo" class="saveBtn "><span class="oi oi-lock-locked"></span></button>
+      </div>
+    </div>
+    <!-- 10am time with task  -->
+    <div id="10" class="row">
+      <div class="col-3 time-block">
+        <p class="hour">
+          10am
+        </p>
+      </div>
+      <div class="col-8">
+        <textarea id="ten_task" class="description" placeholder="Enter Task Here"></textarea>
+      </div>
+      <div class="col-1">
+        <button id="saveBtnThree" class="saveBtn "><span class="oi oi-lock-locked"></span></button>
+      </div>
+    </div>
+    <!-- 11am time with task  -->
+    <div id="11" class="row">
+      <div class="col-3 time-block">
+        <p class="hour">
+          11am
+        </p>
+      </div>
+      <div class="col-8">
+        <textarea id="eleven_task" class="description" placeholder="Enter Task Here"></textarea>
+      </div>
+      <div class="col-1">
+        <button id="saveBtnFour" class="saveBtn "><span class="oi oi-lock-locked"></span></button>
+      </div>
+    </div>
+    <!-- 12pm time with task  -->
+    <div id="12" class="row">
+      <div class="col-3 time-block">
+        <p class="hour">
+          12pm
+        </p>
+      </div>
+      <div class="col-8">
+        <textarea id="twelve_task" class="description" placeholder="Enter Task Here"></textarea>
+      </div>
+      <div class="col-1">
+        <button id="saveBtnFive" class="saveBtn "><span class="oi oi-lock-locked"></span></button>
+      </div>
+    </div>
+    <!-- 1pm time with task  -->
+    <div id="13" class="row">
+      <div class="col-3 time-block">
+        <p class="hour">
+          1pm
+        </p>
+      </div>
+      <div class="col-8">
+        <textarea id="one_task" class="description" placeholder="Enter Task Here"></textarea>
+      </div>
+      <div class="col-1">
+        <button id="saveBtnSix" class="saveBtn "><span class="oi oi-lock-locked"></span></button>
+      </div>
+    </div>
+    <!-- 2pm time with task  -->
+    <div id="14" class="row">
+      <div class="col-3 time-block">
+        <p class="hour">
+          2pm
+        </p>
+      </div>
+      <div class="col-8">
+        <textarea id="two_task" class="description" placeholder="Enter Task Here"></textarea>
+      </div>
+      <div class="col-1">
+        <button id="saveBtnSeven" class="saveBtn "><span class="oi oi-lock-locked"></span></button>
+      </div>
+    </div>
+    <!-- 3pm time with task  -->
+    <div id="15" class="row">
+      <div class="col-3 time-block">
+        <p class="hour">
+          3pm
+        </p>
+      </div>
+      <div class="col-8">
+        <textarea id="three_task" class="description" placeholder="Enter Task Here"></textarea>
+      </div>
+      <div class="col-1">
+        <button id="saveBtnEight" class="saveBtn "><span class="oi oi-lock-locked"></span></button>
+      </div>
+    </div>
+    <!-- 4pm time with task  -->
+    <div id="16" class="row">
+      <div class="col-3 time-block">
+        <p class="hour">
+          4pm
+        </p>
+      </div>
+      <div class="col-8">
+        <textarea id="four_task" class="description" placeholder="Enter Task Here"></textarea>
+      </div>
+      <div class="col-1">
+        <button id="saveBtnNine" class="saveBtn "><span class="oi oi-lock-locked"></span></button>
+      </div>
+    </div>
+  </main>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- link to script.js file in develop folder -->
+  <script src="./script.js"></script>
+  <!-- link to moment.js for current date -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
+<<<<<<< HEAD
+</html>
+=======
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
+>>>>>>> fccd14e50c84997b4b72170e21c19fdba5811a73
