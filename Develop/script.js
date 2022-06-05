@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
     // query selector to select all task descriptions
@@ -265,3 +266,4 @@ $(document).ready(function () {
     // call colorCode function 
     colorCode();
 });
+
